@@ -52,7 +52,7 @@ const app = express();
 const corsOptions = {
 	origin: [
 		'http://localhost:3000',
-		'https://backend-final-front-keh6.vercel.app',
+		'https://full-stack-frontend-eight.vercel.app',
 	],
 	credentials: true,
 	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
