@@ -1,7 +1,7 @@
 {
    "headers": [
      { 
-       "source": "https://backend-final-front-keh6.vercel.app",
+       "source": "https://full-stack-frontend-eight.vercel.app",
        "headers": [
          { "key": "Access-Control-Allow-Origin", "value": "*" },
          { "key": "Access-Control-Allow-Methods", "value": "OPTIONS, POST, GET, PUT, DELETE" },
