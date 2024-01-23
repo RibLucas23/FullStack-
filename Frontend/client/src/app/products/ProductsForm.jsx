@@ -39,7 +39,7 @@ export default function ProductsForm() {
       e.preventDefault();
       console.log(formData)
       try {
-         const response = await fetch('http://localhost:8080/api/products/mongo', {
+         const response = await fetch('https://full-stack-seven.vercel.app/api/products/mongo', {
             method: 'POST',
             headers: {
                'Content-Type': 'application/json',

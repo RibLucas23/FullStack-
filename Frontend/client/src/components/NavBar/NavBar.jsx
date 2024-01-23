@@ -42,7 +42,7 @@ export default function NavBar() {
    const handlelogout = async (e) => {
 
       try {
-         const response = await fetch('http://localhost:8080/api/session/logout', {
+         const response = await fetch('https://full-stack-seven.vercel.app/api/session/logout', {
             method: 'GET',
             headers: {
                'Content-Type': 'application/json',

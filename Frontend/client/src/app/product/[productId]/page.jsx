@@ -5,7 +5,7 @@ export default async function ProductDetail({ params }) {
 
 
    //fetch del producto
-   const product = await fetch(`http://localhost:8080/api/products/mongo/${params.productId}`);
+   const product = await fetch(`https://full-stack-seven.vercel.app/api/products/mongo/${params.productId}`);
 
    const json = await product.json();
 

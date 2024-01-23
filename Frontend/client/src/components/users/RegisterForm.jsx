@@ -26,7 +26,7 @@ export default function RegisterForm() {
       e.preventDefault();
 
       try {
-         const response = await fetch('http://localhost:8080/api/session/signup', {
+         const response = await fetch('https://full-stack-seven.vercel.app/api/session/signup', {
             method: 'POST',
             headers: {
                'Content-Type': 'application/json',

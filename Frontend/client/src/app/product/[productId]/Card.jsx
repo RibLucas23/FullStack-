@@ -40,7 +40,7 @@ export default function Card({ product }) {
    const handleBuy = async () => {
 
       try {
-         const response = await fetch(`http://localhost:8080/api/carts/mongo/${user.cart}/product/${product._id}`, {
+         const response = await fetch(`https://full-stack-seven.vercel.app/api/carts/mongo/${user.cart}/product/${product._id}`, {
             method: 'PUT',
             headers: {
                'Content-Type': 'application/json',
