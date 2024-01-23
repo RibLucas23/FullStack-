@@ -1,0 +1,32 @@
+{
+   "version": 2,
+   "builds": [
+     {
+       "src": "https://full-stack-frontend-eight.vercel.app",
+       "use": "@vercel/static-build",
+       "config": { "distDir": ".next" }
+     },
+     {
+       "src": "https://full-stack-seven.vercel.app",
+       "use": "@vercel/node"
+     }
+   ],
+   "routes": [
+     {
+       "src": "/api/(.*)",
+       "dest": "https://full-stack-seven.vercel.app/$1",
+       "methods": ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"],
+       "headers": {
+         "Access-Control-Allow-Origin": "https://full-stack-frontend-eight.vercel.app",
+         "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+         "Access-Control-Allow-Headers": "Content-Type",
+         "Access-Control-Allow-Credentials": true
+       }
+     },
+     {
+       "src": "/(.*)",
+       "dest": "https://full-stack-frontend-eight.vercel.app/$1"
+     }
+   ]
+ }
+ 
