@@ -49,15 +49,21 @@ import { errors } from './middlewares/errors/errorsWinston.js';
 const app = express();
 
 // Middleware CORS para todas las rutas
-const corsOptions = {
-	origin: ['https://full-stack-frontend-eight.vercel.app'],
-	credentials: true,
-	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-	allowedHeaders: 'Content-Type, Authorization',
-};
+// const corsOptions = {
+// 	origin: ['https://full-stack-frontend-eight.vercel.app'],
+// 	credentials: true,
+// 	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+// 	allowedHeaders: 'Content-Type, Authorization',
+// };
 
-app.use(cors(corsOptions));
-
+// app.use(cors(corsOptions));
+//setteo cors
+app.use(
+	cors({
+		origin: 'https://full-stack-frontend-eight.vercel.app',
+		credentials: true,
+	}),
+);
 // conecto con mongoDB y mongoStore
 mongoose.connect(process.env.MONGO_DB);
 app.use(
