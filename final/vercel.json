@@ -20,7 +20,7 @@
          "Access-Control-Allow-Origin": "https://full-stack-frontend-eight.vercel.app",
          "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
          "Access-Control-Allow-Headers": "Content-Type",
-         "Access-Control-Allow-Credentials": true
+         "Access-Control-Allow-Credentials": "true"
        }
      },
      {
@@ -29,4 +29,3 @@
      }
    ]
  }
- 
